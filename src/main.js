@@ -15,13 +15,11 @@ function createCanvas() {
 }
 
 function resize() {
-  const { clientHeight, clientWidth } = document.documentElement;
+  state.canvas.width = innerWidth * devicePixelRatio;
+  state.canvas.height = innerHeight * devicePixelRatio;
 
-  state.canvas.width = clientWidth * devicePixelRatio;
-  state.canvas.height = clientHeight * devicePixelRatio;
-
-  state.canvas.style.width = `${clientWidth}px`;
-  state.canvas.style.height = `${clientHeight}px`;
+  state.canvas.style.width = `${innerWidth}px`;
+  state.canvas.style.height = `${innerHeight}px`;
 }
 
 init();
