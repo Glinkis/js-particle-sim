@@ -2,9 +2,9 @@
   "name": "js-particle-sim",
   "version": "1.0.0",
   "description": "A javascript particle simulator.",
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
-    "deploy": "gh-pages -d"
+    "deploy": "gh-pages -d src"
   },
   "repository": {
     "type": "git",
