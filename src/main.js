@@ -1,5 +1,5 @@
 // @ts-check
-const TAU = 2 * Math.PI;
+const TAU = Math.PI * 2;
 
 const state = {
   /** @type {number} */
