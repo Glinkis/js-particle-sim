@@ -1,18 +1,15 @@
-const state = {};
+const state = {
+  canvas: document.createElement("canvas")
+};
 
 function init() {
-  createCanvas();
   addEventListener("resize", resize);
+  document.body.appendChild(state.canvas);
   resize();
   update();
 }
 
 function update() {}
-
-function createCanvas() {
-  state.canvas = document.createElement("canvas");
-  document.body.appendChild(state.canvas);
-}
 
 function resize() {
   state.canvas.width = innerWidth * devicePixelRatio;
