@@ -25,10 +25,10 @@ function init() {
   setInterval(() => {
     addParticle({
       x: Math.random(),
-      y: Math.random(),
+      y: Math.random() / 5,
       radius: Math.random() * 20 + 5
     });
-  }, 250);
+  }, 50);
 }
 
 function addParticle(params) {
