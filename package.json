@@ -1,0 +1,31 @@
+{
+  "name": "js-particle-sim",
+  "version": "1.0.0",
+  "description": "A javascript particle simulator.",
+  "main": "main.js",
+  "scripts": {
+    "deploy": "gh-pages -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Glinkis/js-particle-sim.git"
+  },
+  "keywords": [
+    "physics",
+    "particles",
+    "particle",
+    "sim",
+    "simulation",
+    "simulator"
+  ],
+  "author": "Victor Glindås",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Glinkis/js-particle-sim/issues"
+  },
+  "homepage": "https://github.com/Glinkis/js-particle-sim#readme",
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "prettier": "^1.14.3"
+  }
+}
