@@ -65,7 +65,7 @@ function update() {
 }
 
 function draw() {
-  const { particles, canvas, ctx } = state;
+  const { particles, canvas, ctx, deltaTime } = state;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.fillStyle = "#fff";
   for (const { x, y, radius } of particles) {
@@ -73,6 +73,7 @@ function draw() {
     ctx.arc(x * canvas.width, y * canvas.height, radius, 0, TAU);
     ctx.fill();
   }
+  ctx.fillText(`FPS: ${1000 / deltaTime}.`, 10, 10);
 }
 
 function resize() {
